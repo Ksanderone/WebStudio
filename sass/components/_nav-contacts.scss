@@ -7,10 +7,11 @@
     padding-bottom: 32px;
 }
 
-.nav-contacts {
-    display: flex;
-    margin-left: auto;
-}
+// .nav-contacts {
+//     display: flex;
+//     margin-left: auto;
+// }
+
 .nav-contacts__list {
     &:not(:first-child) {
         margin-left: 30px;
