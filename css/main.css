@@ -349,6 +349,17 @@ header {
   border-bottom: 1px solid #ECECEC;
 }
 
+@media screen and (min-width: 768px) {
+  .container.nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
 .nav__logo {
   text-decoration: none;
   font-weight: 700;
@@ -357,6 +368,14 @@ header {
   display: block;
   padding-top: 24px;
   padding-bottom: 24px;
+}
+
+@media screen and (min-width: 768px) {
+  .nav__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
 }
 
 .nav__link {
@@ -394,6 +413,11 @@ header {
 .nav__item:last-child {
   margin-right: 0;
 }
+@media screen and (min-width: 768px) {
+  .nav__item:first-child {
+    margin-left: 88px;
+  }
+}
 
 .nav-contacts__link {
   text-decoration: none;
@@ -407,6 +431,12 @@ header {
 
 .nav-contacts__list:not(:first-child) {
   margin-left: 30px;
+}
+@media screen and (min-width: 768px) {
+  .nav-contacts__list {
+    margin-left: 84px;
+    margin-bottom: 10px;
+  }
 }
 
 .nav-contacts__icon {

@@ -1,7 +1,10 @@
 header {
     border-bottom: 1px solid #ECECEC;
 }
-// .container.nav {
-//     display: flex;
-//     align-items: center;
-// }
+.container.nav {
+    @media screen and (min-width: 768px) {
+        display: flex;
+        align-items: center;
+
+    }
+}
