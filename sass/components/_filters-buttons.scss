@@ -1,13 +1,31 @@
 .portfolio__list {
-    // display: flex;
-    // justify-content: center;
-    margin-bottom: 50px;
+    display: flex; 
+    @media screen and (max-width: 767px) {
+        margin-bottom: 40px;
+        flex-wrap: wrap;
+    }
+    @media screen and (min-width: 768px) {
+        margin-bottom: 30px;
+        justify-content: center;
+    }
+    @media screen and (min-width: 1200px) {
+        margin-bottom: 50px;
+        justify-content: center;
+    }
 }
 .portfolio__item {
     margin-right: 8px;
-
     &:last-child {
         margin-right: 0;
+    }
+    @media screen and (max-width: 767px) {
+        margin-bottom: 10px;
+        &:nth-child(3) {
+            margin-right: 0;
+        }
+        &:nth-child(n + 4) {
+            margin-bottom: 0;
+        }
     }
 }
 .portfolio__buttons {
