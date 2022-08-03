@@ -5,7 +5,7 @@
     }
 }
 .portfolio__images {
-    @media screen and (min-width: 480px) and (max-width: 767px) {
+    @media screen and (max-width: 480px) {
         margin-right: 0;
         width: 450px;
         margin-bottom: 30px;

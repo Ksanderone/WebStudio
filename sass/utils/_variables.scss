@@ -80,6 +80,12 @@ body {
     }
 }
 
+.nav__button {
+    &:hover,
+    &:focus {
+        color: $color-second;
+    }
+}
 
 .form-check__icon {
     background-color: $color-second;

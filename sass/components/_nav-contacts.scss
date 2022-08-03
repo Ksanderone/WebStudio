@@ -31,14 +31,12 @@
 }
 
 .nav-contacts__list {
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
         font-size: 12px;
         letter-spacing: 0.02em;
         
         &:first-child {
             margin-bottom: 10px;
-            
-            
         }
     }
 
