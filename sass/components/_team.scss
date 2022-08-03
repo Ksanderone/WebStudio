@@ -1,20 +1,74 @@
-// .section.team {
-//     text-align: center;
-// }
-.team__title {
-    margin-bottom: 50px;
+.section.team {
+    @media screen and (max-width: 1199px) {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+    text-align: center;
 }
-// .team__list {
-//     display: flex;
-// }
+
+
+.team__title {
+    @media screen and (max-width: 1199px) {
+        margin-bottom: 30px;
+    }
+    @media screen and (min-width: 1200px) {
+        margin-bottom: 50px;
+    }
+}
+.team__list {
+
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    @media screen and (min-width: 1200px) {
+        display: flex;
+    }
+    
+}
 .team__item {
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 
     0px 1px 1px rgba(0, 0, 0, 0.14), 
     0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
-    margin-right: 30px;
-    &:last-child {
-        margin-right: 0;
+
+    @media screen and (min-width: 480px) and (max-width: 767px) {
+        margin-bottom: 30px;
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        width: 354px;
+        margin-right: 30px;
+        margin-bottom: 30px;
+        &:nth-child(even) {
+            margin-right: 0;
+        }
+        &:nth-child(3) {
+            margin-bottom: 0;
+        }
+        &:nth-child(4) {
+            margin-bottom: 0;
+        }
+    }
+    @media screen and (min-width: 1200px) {
+        margin-right: 30px;
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+}
+
+.team__image {
+    @media screen and (min-width: 480px) {
+        width: 450px;
+    }
+    
+    @media screen and (min-width: 768px) {
+        width: 354px;
     }
 }
 
@@ -34,9 +88,9 @@
 }
 .social-list {
     padding: 0 32px 30px 32px;
-    // display: flex;
-    // align-items: center;
-    // justify-content: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .social-list__item {
     width: 44px;
@@ -51,9 +105,9 @@
 .social-list__link {
     width: 44px;
     height: 44px;
-    // display: flex;
-    // justify-content: center;
-    // align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     border-radius: 50%;

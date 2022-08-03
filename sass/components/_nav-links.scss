@@ -1,8 +1,5 @@
 .nav__list { 
-    @media screen and (min-width: 768px) {
-        display: flex;
-
-    }
+    display: flex;
 }
 .nav__link {
     position: relative;
@@ -45,7 +42,7 @@
         margin-right: 0;
     }
 
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
         &:first-child {
             margin-left: 88px;
         }
