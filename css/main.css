@@ -1175,7 +1175,7 @@ header {
   text-transform: uppercase;
   margin-bottom: 20px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1199px) {
   .send {
     text-align: center;
   }
@@ -1217,7 +1217,6 @@ header {
           box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   border: 1px solid rgba(255, 255, 255, 0.3);
-  margin-right: 12px;
 }
 @media screen and (min-width: 480px) {
   .send__input {
@@ -1233,6 +1232,7 @@ header {
 @media screen and (min-width: 1200px) {
   .send__input {
     width: 358px;
+    margin-right: 12px;
   }
 }
 
@@ -1490,6 +1490,7 @@ header {
   z-index: 2;
   -webkit-transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  overflow-y: scroll;
 }
 
 .backdrop.is-hidden {
@@ -1845,10 +1846,6 @@ header {
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.backdrop {
-  overflow-y: scroll;
 }
 
 .nav__menu {
