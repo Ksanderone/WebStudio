@@ -21,6 +21,7 @@
         display: flex;
         flex-wrap: wrap;
         margin: -15px;
+        justify-content: center;
     }
 
     // @media screen and (min-width: 768px) and (max-width: 1199px) {
@@ -34,9 +35,10 @@
 
 }
 .clients__item {
-        @media screen and (min-width: 480px) and (max-width: 767px) {
+        @media screen and (max-width: 767px) {
             flex-basis: calc((100% - 6 * 15px) / 2);
-            margin: 15px
+            margin: 15px;
+            
 
 
             // flex-basis: 50%;
@@ -50,8 +52,10 @@
         }
     
         @media screen and (min-width: 768px) and (max-width: 1199px) {
-            flex-basis: calc((100% - 6 * 15px) / 3);
+             flex-basis: calc((100% - 6 * 15px) / 3);
             margin: 15px;
+
+            
             
             // Flex-basic Или width: calc ((100% - Кол. Марджинов * половину марджина) / на кол.
             //  эмементов в списке);
@@ -98,7 +102,7 @@
     border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
     @media screen and (max-width: 767px) {
-        width: 210px;
+        width: 100%;
     }
 
     @media screen and (min-width: 768px) {
