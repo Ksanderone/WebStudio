@@ -34,6 +34,9 @@
     // display: none;
 }
 
+.backdrop {
+    overflow-y: scroll;
+}
 .nav__menu {
     
     z-index: 1;
