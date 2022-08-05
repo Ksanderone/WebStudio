@@ -6,6 +6,7 @@
     }
 }
 .portfolio__images {
+    
     @media screen and (min-width: 480px) and (max-width: 767px) {
         width: 450px;
         margin-bottom: 30px;
@@ -15,7 +16,6 @@
     }
 
     @media screen and (min-width: 768px) and (max-width: 1199px) {
-        margin: -15px;
         width: 354px;
         // &:nth-child(odd) {
         //     margin-right: 30px;
@@ -72,13 +72,17 @@
 }
 
 .portfolio__box {
+   
+    padding: 20px 24px;
+    border: 1px solid #EEEEEE;
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+    &:first-child {
+        padding-bottom: 56px;
+    }
+}
     
-padding: 20px 24px;
-border: 1px solid #EEEEEE;
 }
-.portfolio__box:first-child {
-    padding: 20px 24px 56px;
-}
+
 
 
 .portfolio-box__name {
