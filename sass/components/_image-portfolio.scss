@@ -2,11 +2,11 @@
     @media screen and (min-width: 768px) {
         display: flex;
         flex-wrap: wrap;
+        margin: -15px;
     }
 }
 .portfolio__images {
-    @media screen and (max-width: 480px) {
-        margin-right: 0;
+    @media screen and (min-width: 480px) and (max-width: 767px) {
         width: 450px;
         margin-bottom: 30px;
         &:nth-child(9) {
@@ -14,14 +14,17 @@
         }
     }
 
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        margin: -15px;
         width: 354px;
-        &:nth-child(odd) {
-            margin-right: 30px;
-        }
-        &:not(last-clild) {
-            margin-bottom: 30px;
-        }
+        // &:nth-child(odd) {
+        //     margin-right: 30px;
+        // }
+        // &:not(last-clild) {
+        //     margin-bottom: 30px;
+        // }
+        flex-basis: calc((100% - 4 * 15px) / 2);
+        margin: 15px;
     }
 
     @media screen and (min-width: 1200px) {
@@ -31,7 +34,7 @@
         &:nth-child(3n + 3) {
             margin-right: 0;
         }
-        &:nth-last-child( -n + 3) {
+        &:last-child {
             margin-bottom: 0;
         }
     }
@@ -44,11 +47,11 @@
     }
 }
 .portfolio__img {
-    @media screen and (min-width: 480px) {
-        width: 450px;       
+    @media screen and (max-width: 767px) {
+        width: 100%;    
     }
     @media screen and (min-width: 768px) and (max-width: 1199px) {
-        width: 354px;
+        width: 100%;
     }
 }
 .portfolio__images:hover .overlay {
@@ -61,7 +64,7 @@
     height: 100%;
     top: 0;
     left: 0;
-    transform: translateY(100%);
+    transform: translateY(101%);
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
     opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
     display: flex;
@@ -69,9 +72,15 @@
 }
 
 .portfolio__box {
+    
 padding: 20px 24px;
 border: 1px solid #EEEEEE;
 }
+.portfolio__box:first-child {
+    padding: 20px 24px 56px;
+}
+
+
 .portfolio-box__name {
     
     font-weight: 700;
