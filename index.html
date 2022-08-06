@@ -192,19 +192,55 @@
                     <h2 class="name works__title">Чем мы занимаемся</h2>
                     <ul class="works__list">
                         <li class="work__item">
-                            <img src="./images/type.jpg" alt="Печатаем на клавиатуре" width="370">
+                            <picture>
+                                <source 
+                                srcset="./images/type.webp 340w,
+                                        ./images/type@2.webp 740w"
+                                        type="image/webp"
+                                />
+                            <img 
+                            srcset="./images/type.jpg 340w,
+                                    ./images/type@2.jpg 740w"
+                            src="./images/type.jpg"
+                            sizes="(min-width: 1200px) 33.3333vw, 100vw"
+                             alt="Печатаем на клавиатуре">
+                            </picture>
                             <div class="work__box">
                                 <p class="work__text">Десктопные приложения</p>
                             </div>
                         </li>
                         <li class="work__item">
-                            <img src="./images/chooisestyles.jpg" alt="Выбираем стиль" width="370">
+                            <picture>
+                                <source 
+                                srcset="./images/chooisestyles.webp 340w,
+                                        ./images/chooisestyles@2.webp 740w"
+                                        type="image/webp"
+                                />
+                            <img 
+                            srcset="./images/chooisestyles.jpg 340w,
+                                    ./images/chooisestyles@2.jpg 740w"
+                            src="./images/chooisestyles.jpg"
+                            sizes="(min-width: 1200px) 33.3333vw, 100vw"
+                             alt="Выбираем стиль" >
+                            </picture>
                         <div class="work__box">
                             <p class="work__text">Мобильные приложения</p>
                         </div>
                         </li>
                         <li class="work__item">
-                            <img src="./images/chooisecolor.jpg" alt="Выбираем цвета" width="370">
+                            <picture>
+                                <source 
+                                srcset="./images/chooisecolor.webp 340w,
+                                        ./images/chooisecolor@2.webp 740w"
+                                        type="image/webp"
+                                />
+                            <img 
+                            srcset="./images/chooisecolor.jpg 340w,
+                                    ./images/chooisecolor@2.jpg 740w"
+                            src="./images/chooisecolor.jpg"
+                            sizes="(min-width: 1200px) 33.3333vw, 100vw"
+                             alt="Выбираем цвета" >
+                            </picture>
                         <div class="work__box">
                             <p class="work__text">Дизайнерские решения</p>
                         </div>
@@ -218,17 +254,27 @@
                     <h2 class="name team__title">Наша команда</h2>
                     <ul class="team__list">
                         <li class="team__item">
-                            <img 
-                            srcset="./images/igordemianenko@1mob.jpg 450w, 
-                                    ./images/igordemianenko@2mob.jpg 900w,
-                                    ./images/igordemianenko@1tab.jpg 354w,
-                                    ./images/igordemianenko@2tab.jpg 708w,
-                                    ./images/igordemianenko@1.jpg 270w,
-                                    ./images/igordemianenko@2.jpg 540w"
-                            src="./images/igordemianenko.jpg" 
-                            sizes="(max-width: 767px) 100vw, (min-width: 768px) 50vw, (min-width: 1200px) 25vw"
-                            class="team__image" 
-                            alt="Игорь Демьяненко">  
+                            <picture>
+                                <source 
+                                srcset="./images/igordemianenko@1mob.webp 450w, 
+                                ./images/igordemianenko@2mob.webp 900w,
+                                ./images/igordemianenko@1tab.webp 354w,
+                                ./images/igordemianenko@2tab.webp 708w,
+                                ./images/igordemianenko@1.webp 270w,
+                                ./images/igordemianenko@2.webp 540w"
+                                type="image/webp"/>
+                                <img 
+                                srcset="./images/igordemianenko@1mob.jpg 450w, 
+                                        ./images/igordemianenko@2mob.jpg 900w,
+                                        ./images/igordemianenko@1tab.jpg 354w,
+                                        ./images/igordemianenko@2tab.jpg 708w,
+                                        ./images/igordemianenko@1.jpg 270w,
+                                        ./images/igordemianenko@2.jpg 540w"
+                                src="./images/igordemianenko.jpg" 
+                                sizes="(max-width: 767px) 100vw, (min-width: 768px) 50vw, (min-width: 1200px) 25vw"
+                                class="team__image" 
+                                alt="Игорь Демьяненко">  
+                            </picture>
                             <div class="team__box">
                                 <h3 class="team__name">Игорь Демьяненко</h3>
                                 <p class="paragraph team__pos">Product Designer</p>
@@ -265,17 +311,27 @@
                             </ul>
                         </li>
                         <li class="team__item">
-                            <img 
-                            srcset="./images/olgarepina@1mob.jpg 450w,
-                                    ./images/olgarepina@2mob.jpg 900w,
-                                    ./images/olgarepina@1tab.jpg 354w,
-                                    ./images/olgarepina@2tab.jpg 708w,
-                                    ./images/olgarepina@1.jpg 270w,
-                                    ./images/olgarepina@2.jpg 540w"
-                            src="./images/olgarepina.jpg" 
-                            sizes="(max-width: 767px) 100vw, (min-width: 768px) 50vw, (min-width: 1200px) 25vw"
-                            class="team__image" 
-                            alt="Ольга Репина" >
+                            <picture>
+                                <source
+                                srcset="./images/olgarepina@1mob.webp 450w,
+                                ./images/olgarepina@2mob.webp 900w,
+                                ./images/olgarepina@1tab.webp 354w,
+                                ./images/olgarepina@2tab.webp 708w,
+                                ./images/olgarepina@1.webp 270w,
+                                ./images/olgarepina@2.webp 540w"
+                                type="image/webp"/>
+                                <img 
+                                srcset="./images/olgarepina@1mob.jpg 450w,
+                                        ./images/olgarepina@2mob.jpg 900w,
+                                        ./images/olgarepina@1tab.jpg 354w,
+                                        ./images/olgarepina@2tab.jpg 708w,
+                                        ./images/olgarepina@1.jpg 270w,
+                                        ./images/olgarepina@2.jpg 540w"
+                                src="./images/olgarepina.jpg" 
+                                sizes="(max-width: 767px) 100vw, (min-width: 768px) 50vw, (min-width: 1200px) 25vw"
+                                class="team__image" 
+                                alt="Ольга Репина" >
+                            </picture>
                             <div class="team__box">
                                 <h3 class="team__name">Ольга Репина</h3>
                                 <p class="paragraph team__pos">Frontend Developer</p>
@@ -312,17 +368,27 @@
                             </ul>
                         </li>
                         <li class="team__item">
-                            <img 
-                             srcset="./images/nikolaitarasov@1mob.jpg 450w, 
-                                    ./images/nikolaitarasov@2mob.jpg 900w,
-                                    ./images/nikolaitarasov@1tab.jpg 354w,
-                                    ./images/nikolaitarasov@2tab.jpg 708w,
-                                    ./images/nikolaitarasov@1.jpg 270w,
-                                    ./images/nikolaitarasov@2.jpg 540w"
-                            src="./images/nikolaitarasov.jpg" 
-                            sizes="(max-width: 767px) 100vw, (min-width: 768px) 50vw, (min-width: 1200px) 25vw"
-                            class="team__image"
-                            alt="Николай Тарасов" >
+                            <picture>
+                                <source
+                                    srcset="./images/nikolaitarasov@1mob.webp 450w, 
+                                    ./images/nikolaitarasov@2mob.webp 900w,
+                                    ./images/nikolaitarasov@1tab.webp 354w,
+                                    ./images/nikolaitarasov@2tab.webp 708w,
+                                    ./images/nikolaitarasov@1.webp 270w,
+                                    ./images/nikolaitarasov@2.webp 540w"
+                                    type="image/webp"/>
+                                <img 
+                                srcset="./images/nikolaitarasov@1mob.jpg 450w, 
+                                        ./images/nikolaitarasov@2mob.jpg 900w,
+                                        ./images/nikolaitarasov@1tab.jpg 354w,
+                                        ./images/nikolaitarasov@2tab.jpg 708w,
+                                        ./images/nikolaitarasov@1.jpg 270w,
+                                        ./images/nikolaitarasov@2.jpg 540w"
+                                src="./images/nikolaitarasov.jpg" 
+                                sizes="(max-width: 767px) 100vw, (min-width: 768px) 50vw, (min-width: 1200px) 25vw"
+                                class="team__image"
+                                alt="Николай Тарасов" >
+                            </picture>
                             <div class="team__box">
                                 <h3 class="team__name">Николай Тарасов</h3>
                                 <p class="paragraph team__pos">Marketing</p>
@@ -359,17 +425,28 @@
                             </ul>
                         </li>
                         <li class="team__item">
-                            <img 
-                             srcset="./images/mihailermakov@1mob.jpg 450w, 
-                                    ./images/mihailermakov@2mob.jpg 900w,
-                                    ./images/mihailermakov@1tab.jpg 354w,
-                                    ./images/mihailermakov@2tab.jpg 708w,
-                                    ./images/mihailermakov@1.jpg 270w,
-                                    ./images/mihailermakov@2.jpg 540w"
-                            src="./images/mihailermakov.jpg" 
-                            sizes="(max-width: 767px) 100vw, (min-width: 768px) 50vw, (min-width: 1200px) 25vw"
-                            class="team__image"
-                            alt="Михаил Ермаков" >
+                            <picture>
+                                <source
+                                srcset="./images/mihailermakov@1mob.webp 450w, 
+                                ./images/mihailermakov@2mob.webp 900w,
+                                ./images/mihailermakov@1tab.webp 354w,
+                                ./images/mihailermakov@2tab.webp 708w,
+                                ./images/mihailermakov@1.webp 270w,
+                                ./images/mihailermakov@2.webp 540w"
+                                type="image/webp"/>
+                                <img 
+                                srcset="./images/mihailermakov@1mob.jpg 450w, 
+                                        ./images/mihailermakov@2mob.jpg 900w,
+                                        ./images/mihailermakov@1tab.jpg 354w,
+                                        ./images/mihailermakov@2tab.jpg 708w,
+                                        ./images/mihailermakov@1.jpg 270w,
+                                        ./images/mihailermakov@2.jpg 540w"
+                                src="./images/mihailermakov.jpg" 
+                                sizes="(max-width: 767px) 100vw, (min-width: 768px) 50vw, (min-width: 1200px) 25vw"
+                                class="team__image"
+                                alt="Михаил Ермаков" >
+                            </picture>
+                    
                             <div class="team__box">
                                 <h3 class="team__name">Михаил Ермаков</h3>
                                 <p class="paragraph team__pos">UI Designer</p>
