@@ -3,6 +3,9 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: flex-start;
+        @media screen and (min-width: 1200px) {
+            justify-content: center;
+        }
         margin: -15px;
     }
 }
