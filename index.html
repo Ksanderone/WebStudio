@@ -194,16 +194,18 @@
                         <li class="work__item">
                             <picture>
                                 <source 
-                                srcset="./images/type.webp 340w,
-                                        ./images/type@2.webp 740w"
-                                        type="image/webp"
+                                    media="(min-width: 1200px)"
+                                    srcset="./images/type.webp 1x,
+                                            ./images/type@2.webp 2x"
+                                    type="image/webp"
                                 />
-                            <img 
-                            srcset="./images/type.jpg 340w,
-                                    ./images/type@2.jpg 740w"
-                            src="./images/type.jpg"
-                            sizes="(min-width: 1200px) 33.3333vw, 100vw"
-                             alt="Печатаем на клавиатуре">
+                                <source 
+                                    media="(min-width: 1200px)"
+                                    srcset="./images/type.jpg 1x,
+                                        ./images/type@2.jpg 2x"/>
+                                <img 
+                                    src="./images/type.jpg"
+                                    alt="Печатаем на клавиатуре">
                             </picture>
                             <div class="work__box">
                                 <p class="work__text">Десктопные приложения</p>
@@ -212,38 +214,39 @@
                         <li class="work__item">
                             <picture>
                                 <source 
-                                srcset="./images/chooisestyles.webp 340w,
-                                        ./images/chooisestyles@2.webp 740w"
-                                        type="image/webp"
-                                />
-                            <img 
-                            srcset="./images/chooisestyles.jpg 340w,
-                                    ./images/chooisestyles@2.jpg 740w"
-                            src="./images/chooisestyles.jpg"
-                            sizes="(min-width: 1200px) 33.3333vw, 100vw"
-                             alt="Выбираем стиль" >
+                                    media="(min-width: 1200px)"
+                                    srcset="./images/chooisestyles.webp 1x,
+                                            ./images/chooisestyles@2.webp 2x"
+                                    type="image/webp"/>
+                                <source
+                                    media="(min-width: 1200px)"
+                                    srcset="./images/chooisestyles.jpg 1x,
+                                        ./images/chooisestyles@2.jpg 2x"/>
+                                <img 
+                                    src="./images/chooisestyles.jpg"
+                                    alt="Выбираем стиль" >
                             </picture>
-                        <div class="work__box">
-                            <p class="work__text">Мобильные приложения</p>
-                        </div>
+                            <div class="work__box">
+                                <p class="work__text">Мобильные приложения</p>
+                            </div>
                         </li>
                         <li class="work__item">
                             <picture>
                                 <source 
-                                srcset="./images/chooisecolor.webp 340w,
-                                        ./images/chooisecolor@2.webp 740w"
-                                        type="image/webp"
-                                />
-                            <img 
-                            srcset="./images/chooisecolor.jpg 340w,
-                                    ./images/chooisecolor@2.jpg 740w"
-                            src="./images/chooisecolor.jpg"
-                            sizes="(min-width: 1200px) 33.3333vw, 100vw"
-                             alt="Выбираем цвета" >
+                                    srcset="./images/chooisecolor.webp 1x,
+                                        ./images/chooisecolor@2.webp 2x"
+                                    type="image/webp"/>
+                                <source 
+                                    srcset="./images/chooisecolor.jpg 1x,
+                                            ./images/chooisecolor@2.jpg 2x"
+                                    type="image/webp"/>    
+                                <img 
+                                    src="./images/chooisecolor.jpg"
+                                    alt="Выбираем цвета" >
                             </picture>
-                        <div class="work__box">
-                            <p class="work__text">Дизайнерские решения</p>
-                        </div>
+                            <div class="work__box">
+                                <p class="work__text">Дизайнерские решения</p>
+                            </div>
                         </li>
                     </ul>
                 </div>
@@ -255,23 +258,40 @@
                     <ul class="team__list">
                         <li class="team__item">
                             <picture>
+                                <source
+                                media="(max-width: 767px)" 
+                                srcset="./images/igordemianenko@1mob.webp 1x, 
+                                ./images/igordemianenko@2mob.webp 2x"
+                                type="image/webp"/>
                                 <source 
-                                srcset="./images/igordemianenko@1mob.webp 450w, 
-                                ./images/igordemianenko@2mob.webp 900w,
-                                ./images/igordemianenko@1tab.webp 354w,
-                                ./images/igordemianenko@2tab.webp 708w,
-                                ./images/igordemianenko@1.webp 270w,
-                                ./images/igordemianenko@2.webp 540w"
+                                media="(min-width: 768px)"
+                                srcset="./images/igordemianenko@1tab.webp 1x,
+                                ./images/igordemianenko@2tab.webp 2x"
+                                type="image/webp"/>
+                                <source
+                                media="(min-width: 1200px)"
+                                srcset="./images/igordemianenko@1.webp 1x,
+                                ./images/igordemianenko@2.webp 2x"
+                                type="image/webp"/>
+                                
+
+                                <source
+                                media="(max-width: 767px)" 
+                                srcset="./images/igordemianenko@1mob.jpg 1x, 
+                                ./images/igordemianenko@2mob.jpg 2x"
+                                type="image/webp"/>
+                                <source 
+                                media="(min-width: 768px)"
+                                srcset="./images/igordemianenko@1tab.jpg 1x,
+                                ./images/igordemianenko@2tab.jpg 2x"
+                                type="image/webp"/>
+                                <source
+                                media="(min-width: 1200px)"
+                                srcset="./images/igordemianenko@1.jpg 1x,
+                                ./images/igordemianenko@2.jpg 2x"
                                 type="image/webp"/>
                                 <img 
-                                srcset="./images/igordemianenko@1mob.jpg 450w, 
-                                        ./images/igordemianenko@2mob.jpg 900w,
-                                        ./images/igordemianenko@1tab.jpg 354w,
-                                        ./images/igordemianenko@2tab.jpg 708w,
-                                        ./images/igordemianenko@1.jpg 270w,
-                                        ./images/igordemianenko@2.jpg 540w"
                                 src="./images/igordemianenko.jpg" 
-                                sizes="(max-width: 767px) 100vw, (min-width: 768px) 50vw, (min-width: 1200px) 25vw"
                                 class="team__image" 
                                 alt="Игорь Демьяненко">  
                             </picture>
@@ -313,22 +333,39 @@
                         <li class="team__item">
                             <picture>
                                 <source
-                                srcset="./images/olgarepina@1mob.webp 450w,
-                                ./images/olgarepina@2mob.webp 900w,
-                                ./images/olgarepina@1tab.webp 354w,
-                                ./images/olgarepina@2tab.webp 708w,
-                                ./images/olgarepina@1.webp 270w,
-                                ./images/olgarepina@2.webp 540w"
+                                media="(max-width: 767px)" 
+                                srcset="./images/olgarepina@1mob.webp 1x, 
+                                ./images/olgarepina@2mob.webp 2x"
                                 type="image/webp"/>
+                                <source 
+                                media="(min-width: 768px)"
+                                srcset="./images/olgarepina@1tab.webp 1x,
+                                ./images/olgarepina@2tab.webp 2x"
+                                type="image/webp"/>
+                                <source
+                                media="(min-width: 1200px)"
+                                srcset="./images/olgarepina@1.webp 1x,
+                                ./images/olgarepina@2.webp 2x"
+                                type="image/webp"/>
+                                
+
+                                <source
+                                media="(max-width: 767px)" 
+                                srcset="./images/olgarepina@1mob.jpg 1x, 
+                                ./images/olgarepina@2mob.jpg 2x"
+                                />
+                                <source 
+                                media="(min-width: 768px)"
+                                srcset="./images/olgarepina@1tab.jpg 1x,
+                                ./images/olgarepina@2tab.jpg 2x"
+                                />
+                                <source
+                                media="(min-width: 1200px)"
+                                srcset="./images/olgarepina@1.jpg 1x,
+                                ./images/olgarepina@2.jpg 2x"
+                                />
                                 <img 
-                                srcset="./images/olgarepina@1mob.jpg 450w,
-                                        ./images/olgarepina@2mob.jpg 900w,
-                                        ./images/olgarepina@1tab.jpg 354w,
-                                        ./images/olgarepina@2tab.jpg 708w,
-                                        ./images/olgarepina@1.jpg 270w,
-                                        ./images/olgarepina@2.jpg 540w"
                                 src="./images/olgarepina.jpg" 
-                                sizes="(max-width: 767px) 100vw, (min-width: 768px) 50vw, (min-width: 1200px) 25vw"
                                 class="team__image" 
                                 alt="Ольга Репина" >
                             </picture>
@@ -370,22 +407,39 @@
                         <li class="team__item">
                             <picture>
                                 <source
-                                    srcset="./images/nikolaitarasov@1mob.webp 450w, 
-                                    ./images/nikolaitarasov@2mob.webp 900w,
-                                    ./images/nikolaitarasov@1tab.webp 354w,
-                                    ./images/nikolaitarasov@2tab.webp 708w,
-                                    ./images/nikolaitarasov@1.webp 270w,
-                                    ./images/nikolaitarasov@2.webp 540w"
-                                    type="image/webp"/>
+                                media="(max-width: 767px)" 
+                                srcset="./images/nikolaitarasov@1mob.webp 1x, 
+                                ./images/nikolaitarasov@2mob.webp 2x"
+                                type="image/webp"/>
+                                <source 
+                                media="(min-width: 768px)"
+                                srcset="./images/nikolaitarasov@1tab.webp 1x,
+                                ./images/nikolaitarasov@2tab.webp 2x"
+                                type="image/webp"/>
+                                <source
+                                media="(min-width: 1200px)"
+                                srcset="./images/nikolaitarasov@1.webp 1x,
+                                ./images/nikolaitarasov@2.webp 2x"
+                                type="image/webp"/>
+                                
+
+                                <source
+                                media="(max-width: 767px)" 
+                                srcset="./images/nikolaitarasov@1mob.jpg 1x, 
+                                ./images/nikolaitarasov@2mob.jpg 2x"
+                                />
+                                <source 
+                                media="(min-width: 768px)"
+                                srcset="./images/nikolaitarasov@1tab.jpg 1x,
+                                ./images/nikolaitarasov@2tab.jpg 2x"
+                                />
+                                <source
+                                media="(min-width: 1200px)"
+                                srcset="./images/nikolaitarasov@1.jpg 1x,
+                                ./images/nikolaitarasov@2.jpg 2x"
+                                />
                                 <img 
-                                srcset="./images/nikolaitarasov@1mob.jpg 450w, 
-                                        ./images/nikolaitarasov@2mob.jpg 900w,
-                                        ./images/nikolaitarasov@1tab.jpg 354w,
-                                        ./images/nikolaitarasov@2tab.jpg 708w,
-                                        ./images/nikolaitarasov@1.jpg 270w,
-                                        ./images/nikolaitarasov@2.jpg 540w"
                                 src="./images/nikolaitarasov.jpg" 
-                                sizes="(max-width: 767px) 100vw, (min-width: 768px) 50vw, (min-width: 1200px) 25vw"
                                 class="team__image"
                                 alt="Николай Тарасов" >
                             </picture>
@@ -427,26 +481,42 @@
                         <li class="team__item">
                             <picture>
                                 <source
-                                srcset="./images/mihailermakov@1mob.webp 450w, 
-                                ./images/mihailermakov@2mob.webp 900w,
-                                ./images/mihailermakov@1tab.webp 354w,
-                                ./images/mihailermakov@2tab.webp 708w,
-                                ./images/mihailermakov@1.webp 270w,
-                                ./images/mihailermakov@2.webp 540w"
+                                media="(max-width: 767px)" 
+                                srcset="./images/mihailermakov@1mob.webp 1x, 
+                                ./images/mihailermakov@2mob.webp 2x"
                                 type="image/webp"/>
+                                <source 
+                                media="(min-width: 768px)"
+                                srcset="./images/mihailermakov@1tab.webp 1x,
+                                ./images/mihailermakov@2tab.webp 2x"
+                                type="image/webp"/>
+                                <source
+                                media="(min-width: 1200px)"
+                                srcset="./images/mihailermakov@1.webp 1x,
+                                ./images/mihailermakov@2.webp 2x"
+                                type="image/webp"/>
+                                
+
+                                <source
+                                media="(max-width: 767px)" 
+                                srcset="./images/mihailermakov@1mob.jpg 1x, 
+                                ./images/mihailermakov@2mob.jpg 2x"
+                                />
+                                <source 
+                                media="(min-width: 768px)"
+                                srcset="./images/mihailermakov@1tab.jpg 1x,
+                                ./images/mihailermakov@2tab.jpg 2x"
+                                />
+                                <source
+                                media="(min-width: 1200px)"
+                                srcset="./images/mihailermakov@1.jpg 1x,
+                                ./images/mihailermakov@2.jpg 2x"
+                                />
                                 <img 
-                                srcset="./images/mihailermakov@1mob.jpg 450w, 
-                                        ./images/mihailermakov@2mob.jpg 900w,
-                                        ./images/mihailermakov@1tab.jpg 354w,
-                                        ./images/mihailermakov@2tab.jpg 708w,
-                                        ./images/mihailermakov@1.jpg 270w,
-                                        ./images/mihailermakov@2.jpg 540w"
                                 src="./images/mihailermakov.jpg" 
-                                sizes="(max-width: 767px) 100vw, (min-width: 768px) 50vw, (min-width: 1200px) 25vw"
                                 class="team__image"
                                 alt="Михаил Ермаков" >
                             </picture>
-                    
                             <div class="team__box">
                                 <h3 class="team__name">Михаил Ермаков</h3>
                                 <p class="paragraph team__pos">UI Designer</p>
