@@ -731,7 +731,6 @@ header {
 
 @media screen and (max-width: 767px) {
   .quality__item {
-    width: 450px;
     margin-bottom: 30px;
   }
   .quality__item:last-child {
