@@ -8,6 +8,13 @@
 .nav__link {
     position: relative;
     display: block;
+
+    @media screen and (max-width: 767px) {
+         
+            padding-bottom: 16px;
+            padding-top: 16px;
+        
+    }
     @media screen and (min-width: 768px) {
         padding-top: 32px;
         padding-bottom: 32px;
@@ -59,13 +66,8 @@
         font-size: 40px;
         line-height: 1.172;
         letter-spacing: 00.02em;
-        margin-left: 40px;
-        &:first-child {
-            margin-top: 48px;
-        }
-        &:not(:last-child) {
-            margin-bottom: 32px;
-        }
+        
+        
     }
 
     @media screen and (min-width: 768px) and (max-width: 1199px) {

@@ -1,6 +1,6 @@
-.nav__button {
+.menu-toggle {
     @media screen and (max-width: 768px) {
-        z-index: 2;
+        z-index: 1;
         position: absolute;
         top: 22px;
         right: 23px;
@@ -10,62 +10,34 @@
         border: none;
         background-color: transparent;
         fill: currentColor;
+
+        &:hover {
+            color: #2196f3;
+        }
     }
     @media screen and (min-width: 768px) {
-        
          display: none;
     }
 }
-
-.nav__button.is-open {
-    position: fixed;
-}
-.nav__icon-close {
-    opacity: 0;
-    
-    // display: none;
-}
-.is-open .nav__icon-close {
-    opacity: 1;
-    
-    // display: block;
-
-    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.is-open .nav__icon-menu {
-    opacity: 0;
-    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    // display: none;
-}
-
-
 
 .backdrop-menu {
     @media screen and (max-width: 767px) {
         overflow-y: scroll;
     }
-    
 }
-
 .nav__menu {
+    padding: 48px 83px 48px 40px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     z-index: 1;
-    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
     &.is-open {
-        opacity: 1;
         transform: translateX(0);
     }
 
-    
-
     @media screen and (max-width: 767px) {
         transform: translateX(-100%);
-        opacity: 0;
         position: fixed;
         top: 0;
         left: 0;
