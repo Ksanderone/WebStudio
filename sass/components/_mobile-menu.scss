@@ -16,6 +16,10 @@
          display: none;
     }
 }
+
+.nav__button.is-open {
+    position: fixed;
+}
 .nav__icon-close {
     opacity: 0;
     
