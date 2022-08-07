@@ -17,10 +17,9 @@
     pointer-events: none;
 }
 .modal {
-    @media screen and (min-width: 480px) and (max-width: 1199px) {
+    @media screen and (max-width: 1199px) {
         width: 450px;
-        height: 609px;
-        
+        height: 609px;  
     }
     @media screen and (min-width: 1200px) {
         min-width: 528px;
