@@ -1851,6 +1851,11 @@ header {
   display: flex;
   margin-left: 40px;
 }
+@media screen and (min-width: 768px) {
+  .modal-links__list {
+    display: none;
+  }
+}
 
 .modal-links__item {
   font-size: 18px;
@@ -1966,6 +1971,7 @@ header {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    display: contents;
   }
 }
 
