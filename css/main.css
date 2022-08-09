@@ -1845,12 +1845,6 @@ header {
   background-color: rgb(24, 140, 232);
 }
 
-@media screen and (min-width: 767px) {
-  .modal-links {
-    display: none;
-  }
-}
-
 .modal-links__list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1859,6 +1853,11 @@ header {
 @media screen and (min-width: 768px) {
   .modal-links__list {
     display: none;
+  }
+}
+@media screen and (max-width: 768px) {
+  .modal-links__list {
+    width: 768px;
   }
 }
 
@@ -1928,8 +1927,8 @@ header {
 }
 @media screen and (max-width: 767px) {
   .nav__menu {
-    -webkit-transform: translateX(-100%);
-            transform: translateX(-100%);
+    -webkit-transform: translateX(-200%);
+            transform: translateX(-200%);
     position: fixed;
     top: 0;
     left: 0;
